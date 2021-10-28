@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WOMAZING</title>
+    
+    <!-- Slick -->
+    <link rel="stylesheet" href="slick/slick.css">
+    <link rel="stylesheet" href="slick/slick-theme.css">
+
+    <!-- Styles -->
+    <link rel="stylesheet" href="src/css/style.css">
+
+</head>
+<body>
+    <header class="header" id="header">
+        <div class="header__wrapper">
+            <div class="header__container container">
+                <div class="header__body">
+                    <div class="header__main">
+                        <a href="index.html" class="header__logo"><span class="fa fa-logo"></span> WOMAZING</a>
+                    </div>
+                    <div class="header__menu menu">
+                        <nav class="menu__body">
+                            <ul class="menu__list">
+                                <li class="menu__item active">
+                                    <a href="index.html" class="menu__link">Главная</a>
+                                </li>
+                                <li class="menu__item">
+                                    <a href="shop.html" class="menu__link">Магазин</a>
+                                </li>
+                                <li class="menu__item">
+                                    <a href="brend.html" class="menu__link">О бренде</a>
+                                </li>
+                                <li class="menu__item">
+                                    <a href="contacts.html" class="menu__link">Контакты</a>
+                                </li>
+                            </ul>
+                        </nav>
+                    </div>
+                    <div class="header__phone phone">
+                        <a href="#popup" class="fa fa-phone"></a>
+                        <a href="tel:+74958235412" class="phone__link"> +7 (495) 823-54-12</a>
+                    </div>
+                    <div class="header__cart">
+                        <a href="cart.html" class="cart__icon"><span class="fa fa-cart"></span><span class="coutItem">3</span></a>
+                    </div>
+                    <div class="burger">
+                        <span class="line"></span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+
+    <section class="first-screen">
+        <div class="first-screen__absolute_bg"></div>
+        <div class="first-screen__wrapper">
+            <div class="first-screen__container container">
+                <div class="first-screen__body">
+                    <div class="first-screen__slider slider">
+                        <div class="slider__body">
+                            <div class="slider__list" id="slide">
+                                <div class="slider__item slide-single">
+                                    <h1 class="slider__title">Новые поступления в этом сезоне</h1>
+                                    <p class="slider__text">Утонченные сочетания и бархатные оттенки - вот то, что вы искали в этом сезоне. Время исследовать.</p>
+                                   <div class="slider__btn">
+                                        <a href="" class="next-section"><span class="fa fa-arrow-down"></span></a>
+                                        <a href="shop.html" class="btn">Открыть магазин</a>
+                                   </div>
+                                </div>
+                                <div class="slider__item slide-single">
+                                    <h1 class="slider__title">Что-то новенькое. Мы заждались тебя.</h1>
+                                    <p class="slider__text">Надоело искать себя в сером городе? Настало время новых идей, свежих красок и вдохновения с Womazing!</p>
+                                   <div class="slider__btn">
+                                        <a href="" class="next-section"><span class="fa fa-arrow-down"></span></a>
+                                        <a href="shop.html" class="btn">Открыть магазин</a>
+                                   </div>
+                                </div>
+                                <div class="slider__item slide-single">
+                                    <h1 class="slider__title">Включай новый сезон с WOMAZING</h1>
+                                    <p class="slider__text">Мы обновили ассортимент - легендарные коллекции и новинки от отечественных дизайнеров</p>
+                                   <div class="slider__btn">
+                                        <a href="" class="next-section"><span class="fa fa-arrow-down"></span></a>
+                                        <a href="shop.html" class="btn">Открыть магазин</a>
+                                   </div>
+                                </div>
+                            </div>
+                            <div class="slider__point" id="sliderPointEl">
+                                <span data-id="0" class="active"></span>
+                                <span data-id="1"></span>
+                                <span data-id="2"></span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="first-screen__images">
+                        <img src="src/images/woman-left.png">
+                        <img src="src/images/woman-main.png">
+                        <img src="src/images/woman-right.png">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="collection" id="collection">
+        <div class="collection__wrapper">
+            <div class="collection__container container">
+                <div class="colelction__body">
+                    <h2>Новая коллекции</h2>
+                    <div class="collection__cards card">
+                        <div class="card__list">
+                            <div class="card__item">
+                                <div class="card__body">
+                                    <div class="card__img">
+                                        <img src="src/images/good1.png" alt="Девушка в футболке">
+                                        <div class="card__overlay"><a href="single.html"><span class="fa fa-arrow-right"></span></a></div>
+                                    </div>
+                                    <h4 class="card__title">Футболка USA</h4>
+                                    <div class="card__price price">
+                                        <span class="price__old">$229</span>
+                                        <span class="price__new">$129</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card__item">
+                                <div class="card__body">
+                                    <div class="card__img">
+                                        <img src="src/images/good2.png" alt="Девушка в купальнике">
+                                        <div class="card__overlay"><a href="single.html"><span class="fa fa-arrow-right"></span></a></div>
+                                    </div>
+                                    <h4 class="card__title">Купальник Glow</h4>
+                                    <div class="card__price price">
+                                        <span class="price__old"></span>
+                                        <span class="price__new">$129</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card__item">
+                                <div class="card__body">
+                                    <div class="card__img">
+                                        <img src="src/images/good3.png" alt="Девушка в свитшотеы">
+                                        <div class="card__overlay"><a href="single.html"><span class="fa fa-arrow-right"></span></a></div>
+                                    </div>
+                                    <h4 class="card__title">Свитшот Sweet Shot</h4>
+                                    <div class="card__price price">
+                                        <span class="price__old"></span>
+                                        <span class="price__new">$129</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                   <div class="collection__link">
+                        <a href="shop.html" class="btn-outline collection__btn">Открыть магазин</a>
+                   </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="advantages">
+        <div class="advantages__wrapper">
+            <div class="advantages__container container">
+                <div class="advantages__body">
+                    <h2 class="advantages__title">Что для нас важно</h2>
+                    <div class="advantages__list">
+                        <div class="advantages__item item">
+                            <div class="item__body">
+                                <span class="fa fa-quality"></span>
+                                <h3 class="item__title">Качество</h3>
+                                <p class="item__text">Наши профессионалы работают на лучшем оборудовании для пошива одежды беспрецедентного качества</p>
+                            </div>
+                        </div>
+                        <div class="advantages__item item">
+                            <div class="item__body">
+                                <span class="fa fa-gear"></span>
+                                <h3 class="item__title">Скорость</h3>
+                                <p class="item__text">Благодаря отлаженной системе в Womazing мы можем отшивать до 20-ти единиц продукции в наших собственных цехах</p>
+                            </div>
+                        </div>
+                        <div class="advantages__item item">
+                            <div class="item__body">
+                                <span class="fa fa-hand"></span>
+                                <h3 class="item__title">Ответственность</h3>
+                                <p class="item__text">Мы заботимся о людях и планете. Безотходное производство и комфортные условия труда - все это Womazing</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="team">
+        <div class="team__wrapper">
+            <div class="team__container container">
+                <div class="team__body">
+                    <h2 class="team__title">Команда мечты Womazing</h2>
+                    <div class="team__main">
+                        <div class="team__slider">
+                            <div class="slider single-item">
+                                <div><img src="src/images/team1.jpg" class="single-slide" alt="Три девушки с ножницами и расчёсками"></div>
+                                <div><img src="src/images/team2.jpg" class="single-slide" alt="Три девушки с ножницами и расчёсками"></div>
+                                <div><img src="src/images/team3.jpg" class="single-slide" alt="Три девушки с ножницами и расчёсками"></div>
+                            </div>
+                        </div>
+                        <div class="team__text">
+                            <div class="team__text-body">
+                                <h3 class="text__title">Для каждой</h3>
+                                <p class="text__info">Каждая девушка уникальна. Однако, мы схожи в миллионе мелочей.</p>
+                                <p class="text__info">Womazing ищет эти мелочи и создает прекрасные вещи, которые выгодно подчеркивают достоинства каждой девушки.</p>
+                                <a href="#" class="text__link">Подробнее о бренде</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="footer__wrapper">
+            <div class="footer__container container">
+                <div class="footer__body">
+                    <div class="footer__head">
+                        <nav class="footer__nav">
+                            <a class="footer__logo"><span class="fa fa-logo"></span>Womazing</a>
+                            <div class="footer__menu">
+                                <ul class="footer__list">
+                                    <li class="footer__item"><a href="#">Главная</a></li>
+                                    <li class="footer__item"><a href="#">Магазин</a></li>
+                                    <li class="footer__item"><a href="#">О бренде</a></li>
+                                    <li class="footer__item"><a href="#">Контакты</a></li>
+                                </ul>
+                            </div>
+                            <div class="footer__callback">
+                                <a href="tel:+74958235412" class="footer__phone">+7 (495) 823-54-12</a>
+                                <a href="mailto:hello@womazing.com" class="footer__mail">hello@womazing.com</a>
+                            </div>   
+                        </nav>
+                    </div>
+                    <div class="footer__foot">
+                        <div class="footer__link">
+                            <p>&copy; Все права защищены</p>
+                            <a href="#">Политика конфиденциальности</a>
+                            <a href="#">Публичная оферта</a>
+                        </div>
+                        <div class="footer__category">
+                            <ul class="category__list">
+                                <li><a href="#">Пальто</a></li>
+                                <li><a href="#">Свитшоты</a></li>
+                                <li><a href="#">Кардиганы</a></li>
+                                <li><a href="#">Толстовки</a></li>
+                            </ul>
+                        </div>
+                        <div class="footer__other-links">
+                            <div class="soc-links">
+                                <span class="fa fa-inst"></span>
+                                <span class="fa fa-fb"></span>
+                                <span class="fa fa-tw"></span>
+                            </div>
+                            <img src="src/images/visa.png" class="visa" alt="Виза">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+
+    <div id="popup" class="popup">
+        <a href="#header" class="popup__area"></a>
+        <div class="popup__body">
+            <div class="popup__content">
+                <a href="#header" class="popup__close"><span class="fa fa-close"></span></a>
+
+                <form class="popup__form" method="POST">
+                    <h3>Заказать обратный звонок</h3>
+                    <input type="text" placeholder="Имя" >
+                    <input type="email" placeholder="E-mail" >
+                    <input type="number" placeholder="Телефон" >
+                    <input type="button" class="btn" value="Заказать звонок">
+                </form> 
+
+                <div class="success__popup" style="display: none;">
+                    <h3>Отлично мы скоро вам перезвоним.</h3>
+                    <a href="#header" class="btn-outline">Закрыть</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="src/js/sliderHeader.js"></script>
+    <script src="src/js/scroll.js"></script>
+    <!-- <script src="src/js/sliderBottom.js"></script> -->
+    
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha256-4+XzXVhsDmqanXGHaHvgh1gMQKX40OUvDEBTu8JcmNs=" crossorigin="anonymous"></script>
+    <script src="slick/slick.min.js"></script>
+    <script src="src/js/script.js"></script>
+    <script src="src/js/slick-setting.js"></script>
+</body>
+</html>

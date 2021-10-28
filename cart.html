@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WOMAZING | Корзина</title>
+
+    <!-- Styles -->
+    <link rel="stylesheet" href="src/css/cart.css">
+
+</head>
+<body>
+    <header class="header" id="header">
+        <div class="header__wrapper">
+            <div class="header__container container">
+                <div class="header__body">
+                    <div class="header__main">
+                        <a href="index.html" class="header__logo"><span class="fa fa-logo"></span> WOMAZING</a>
+                    </div>
+                    <div class="header__menu menu">
+                        <nav class="menu__body">
+                            <ul class="menu__list">
+                                <li class="menu__item">
+                                    <a href="index.html" class="menu__link">Главная</a>
+                                </li>
+                                <li class="menu__item">
+                                    <a href="shop.html" class="menu__link">Магазин</a>
+                                </li>
+                                <li class="menu__item">
+                                    <a href="brend.html" class="menu__link">О бренде</a>
+                                </li>
+                                <li class="menu__item">
+                                    <a href="contacts.html" class="menu__link">Контакты</a>
+                                </li>
+                            </ul>
+                        </nav>
+                    </div>
+                    <div class="header__phone phone">
+                        <a href="#popup" class="fa fa-phone"></a>
+                        <a href="tel:+74958235412" class="phone__link"> +7 (495) 823-54-12</a>
+                    </div>
+                    <div class="header__cart">
+                        <a href="cart.html" class="cart__icon"><span class="fa fa-cart"></span></a>
+                    </div>
+                    <div class="burger">
+                        <span class="line"></span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <section class="breadcrumbs">
+        <div class="breadcrumbs__container container">
+            <div class="breadcrumbs__body">
+                <h1 class="breadcrumbs__title">Корзина</h1>
+                <nav class="breadcrumbs__nav">
+                    <a href="index.html">Главная</a>
+                    <a>Корзина</a>
+                </nav>
+            </div>
+        </div>
+    </section>
+
+    <section class="cart">
+        <div class="cart__wrapper">
+            <div class="cart__container container">
+                <div class="cart__body">
+                    <table class="cart__info">
+                        <thead>
+                            <tr>
+                                <th>Товар</th>
+                                <th></th>
+                                <th></th>
+                                <th>Цена</th>
+                                <th>Количество</th>
+                                <th>Всего</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td><span class="fa fa-close"></span></td>
+                                <td class="order"><img src="src/images/good1.png"><p>Футболка USA</p></td>
+                                <td><p class="price">$129</p></td>
+                                <td><p class="cout">1</p></td>
+                                <td><p class="price">$129</p></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <div class="cart__submenu">
+                        <form>
+                            <input type="text" placeholder="Введите купон">
+                            <input type="submit" value="Применить купон" class="btn-outline">
+                        </form>
+                        <button class="btn-outline">Обновить корзину</button>
+                    </div>
+                    <div class="cart__result">
+                        <p class="subresult">Подытог: <span>$129</span></p>
+                        <div class="result__foot">
+                            <p class="result__summ">Итог: <span>$129</span></p>
+                            <a href="checkout.html" class="btn">Оформить заказ</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="footer__wrapper">
+            <div class="footer__container container">
+                <div class="footer__body">
+                    <div class="footer__head">
+                        <nav class="footer__nav">
+                            <a class="footer__logo"><span class="fa fa-logo"></span>Womazing</a>
+                            <div class="footer__menu">
+                                <ul class="footer__list">
+                                    <li class="footer__item"><a href="#">Главная</a></li>
+                                    <li class="footer__item"><a href="#">Магазин</a></li>
+                                    <li class="footer__item"><a href="#">О бренде</a></li>
+                                    <li class="footer__item"><a href="#">Контакты</a></li>
+                                </ul>
+                            </div>
+                            <div class="footer__callback">
+                                <a href="tel:+74958235412" class="footer__phone">+7 (495) 823-54-12</a>
+                                <a href="mailto:hello@womazing.com" class="footer__mail">hello@womazing.com</a>
+                            </div>   
+                        </nav>
+                    </div>
+                    <div class="footer__foot">
+                        <div class="footer__link">
+                            <p>&copy; Все права защищены</p>
+                            <a href="#">Политика конфиденциальности</a>
+                            <a href="#">Публичная оферта</a>
+                        </div>
+                        <div class="footer__category">
+                            <ul class="category__list">
+                                <li><a href="#">Пальто</a></li>
+                                <li><a href="#">Свитшоты</a></li>
+                                <li><a href="#">Кардиганы</a></li>
+                                <li><a href="#">Толстовки</a></li>
+                            </ul>
+                        </div>
+                        <div class="footer__other-links">
+                            <div class="soc-links">
+                                <span class="fa fa-inst"></span>
+                                <span class="fa fa-fb"></span>
+                                <span class="fa fa-tw"></span>
+                            </div>
+                            <img src="src/images/visa.png" class="visa" alt="Виза">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <div id="popup" class="popup">
+        <a href="#header" class="popup__area"></a>
+        <div class="popup__body">
+            <div class="popup__content">
+                <a href="#header" class="popup__close"><span class="fa fa-close"></span></a>
+                <form class="popup__form" method="POST" action="#">
+                    <h3>Заказать обратный звонок</h3>
+                    <input type="text" placeholder="Имя" required>
+                    <input type="email" placeholder="E-mail" required>
+                    <input type="number" placeholder="Телефон" required>
+                    <input type="submit" class="btn" value="Заказать звонок">
+                </form> 
+
+
+                <!-- <h3>Отлично мы скоро вам перезвоним.</h3>
+                <a href="#header" class="btn-outline">Закрыть</a> -->
+            </div>
+        </div>
+    </div>
+
+    <script src="src/js/scroll.js"></script>
+    <script src="src/js/script.js"></script>
+</body>
+</html>

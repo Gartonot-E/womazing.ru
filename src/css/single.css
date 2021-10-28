@@ -1,0 +1,11 @@
+/* Базовые стили */
+@import url('base/index.css');
+
+/* Шапка */
+@import url('header/index.css');
+
+/* Главная страницы */
+@import url('single/index.css');
+
+/* Подвал */
+@import url('footer/index.css');

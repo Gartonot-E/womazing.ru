@@ -1,0 +1,77 @@
+.breadcrumbs {
+    margin-top: 269px;
+}
+
+.contancts { margin: 130px 0; }
+
+.contacts__main.main {
+    margin-top: 130px;
+    display: flex;
+    gap: 111px;
+} 
+
+.contacts__main.main p {  font-size: 17px; }
+
+.contacts__main.main a {  
+    font-size: 20px; 
+    color: #000; 
+    margin-top: 19px;
+    display: block; 
+}
+
+.contacts__form { margin-top: 130px; }
+
+.contacts__form h3 {
+    color: #000;
+    font-family: "Raleway-M";
+    font-weight: 500;
+    font-size: 25px;
+}
+
+.contacts__form input:active,
+.contacts__form input:focus,
+.contacts__form textarea:active,
+.contacts__form textarea:focus {
+    outline: none;
+}
+
+.contacts__form input[type="submit"] {
+    border: none;
+    padding: 22px 0;
+    font-size: 17px;
+}
+
+.contacts__form input { width: 80%; }
+
+.contacts__form input,
+.contacts__form textarea {
+    font-family: "Raleway";
+    border: none;
+    font-size: 16px;
+    border-bottom: 1px solid #000000;
+    padding: 16px 8px;
+    margin-top: 35px;
+    resize: none;
+}
+
+.contacts__form form {
+    display: flex;
+    flex-direction: column;
+    width: 41.66%;
+}
+
+.message-success {
+    background: #F1EADC;
+    padding: 30px 76px;
+    font-size: 16px;
+    display: inline-block;
+    margin-top: 62px;
+}
+
+@media (max-width: 920px) {
+    .contacts__main.main { flex-direction: column; gap: 50px; }
+}
+
+@media (max-width: 600px) {
+    .contacts__form form, .contacts__form input { width: 100%; }
+}

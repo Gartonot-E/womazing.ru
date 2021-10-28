@@ -1,0 +1,14 @@
+/* Иконочный шрифт */
+@import url('blocks/icons.css');
+
+/* Шрифты */
+@import url('blocks/fonts.css');
+
+/* Базовые стили */
+@import url('blocks/base.css');
+
+/* Хлебные крошки */
+@import url('blocks/breadcrumbs.css');
+
+/* Анимационные стили */
+@import url('blocks/animation.css');

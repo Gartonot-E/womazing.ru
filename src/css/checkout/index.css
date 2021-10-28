@@ -1,0 +1,140 @@
+.breadcrumbs { margin-top: 269px; }
+
+.checkout { margin: 130px 0; }
+
+.checkout__body form { display: flex; justify-content: space-between; }
+.checkout__body form .checkout__form { display: flex; flex-direction: column;}
+
+.checkout__form h3 {
+    font-family: "Raleway-M";
+    font-style: normal;
+    font-weight: 500;
+    font-size: 25px;
+    line-height: 140%;
+    letter-spacing: 0.02em;
+    color: #000000;
+    margin-bottom: 47px;
+}
+
+.checkout__form h3:not(:first-child) {
+    margin-top: 81px;
+}
+
+.checkout__form h3 {
+    color: #000;
+    font-family: "Raleway-M";
+    font-weight: 500;
+    font-size: 25px;
+}
+
+.checkout__form input:active,
+.checkout__form input:focus {
+    outline: none;
+}
+
+.checkout__form input[type="submit"] {
+    border: none;
+    padding: 22px 0;
+    font-size: 17px;
+}
+
+.checkout__form input,
+.checkout__form textarea {
+    border: none;
+    border-bottom: 1px solid #000000;
+    padding: 16px 8px;
+    resize: none;
+    font-size: 16px;
+    font-family: "Raleway";
+}
+
+.checkout__info { margin-right: 192px; }
+
+.checkout__info { 
+    display: flex; 
+    flex-direction: column;
+}
+
+.order__list { 
+    display: flex; 
+    flex-direction: column;   
+    position: relative;
+}
+
+.order__list li { font-size: 17px; margin-bottom: 30px; }
+
+.order__list li:first-child,
+.order__list li:last-child { font-size: 20px; }
+
+.order__list li:last-child { 
+    background: #F1EADC;
+    padding: 15px 34px;
+    position: absolute;
+    bottom: -80px;
+    left: -30px;
+    width: 100%;
+}
+
+.order__list li { display: flex; justify-content: space-between;}
+
+.checkout__info h3 {
+    font-family: "Raleway-M";
+    font-style: normal;
+    font-weight: 500;
+    font-size: 25px;
+    line-height: 140%;
+    letter-spacing: 0.02em;
+    color: #000000;
+    margin-bottom: 47px;
+}
+
+.checkout__info h3.method-payment { margin-top: 159px; }
+
+.checkout__info label { margin-bottom: 47px; display: flex; align-items: center; gap: 14px}
+.checkout__info label span { 
+    font-family: "Raleway-M";
+    font-style: normal;
+    font-weight: 500;
+    font-size: 17px;
+    line-height: 140%;
+    letter-spacing: 0.02em;
+    color: #000000;
+}
+
+.checkout__info label .checkbox { 
+   display: none;
+}
+
+.checkout__info label .fake {
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    border: 1px solid #000000;
+    position: relative;
+}
+
+.checkout__info label .fake::before {
+    content: "";
+    position: absolute;
+    display: block;
+    width: 10px;
+    height: 10px;
+    background: #000;
+    top: 50%; left: 50%;
+    transform: translate(-50%, -50%);
+    opacity: 0;
+}
+
+.checkbox:checked + .fake::before { opacity: 1; }
+
+@media (max-width: 1100px) {
+    .checkout__body form { 
+        flex-direction: column;
+        gap: 130px;
+    }
+    .checkout__info { margin-right: 0;}
+}
+
+@media (max-width: 500px) {
+    .breadcrumbs h1 { font-size: 40px;  }
+}

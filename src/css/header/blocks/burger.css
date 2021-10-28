@@ -1,0 +1,31 @@
+.burger {
+    padding: 20px 10px;
+    width: 40px;
+    display: none;
+}
+
+.burger span {
+    width: 100%;
+    height: 3px;
+    display: block;
+    background: #666;
+    border-radius: 6px;
+}
+
+.burger span::after, 
+.burger span::before {
+    content: "";
+    height: 3px;
+    display: block;
+    background: #666;
+    border-radius: 6px;
+    position: relative;
+    transition: .5s ease;
+}
+
+.burger span::before { top: -10px; }
+.burger span::after { top: 7px; }
+
+.burger.active span { background: transparent; }
+.burger.active span:before { top: 0px; transform: rotate(405deg); }
+.burger.active span::after { top: -3px;  transform: rotate(-405deg);}

@@ -1,0 +1,11 @@
+@keyframes img1 {
+    0% { opacity: 0; right: 580px; }
+}
+
+@keyframes img2 {
+    0% { opacity: 0; top: -200px; }
+}
+
+@keyframes img3 {
+    0% { opacity: 0; top: 200px; }
+}

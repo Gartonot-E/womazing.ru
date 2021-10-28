@@ -1,0 +1,137 @@
+.team {
+    position: relative;
+    margin: 130px 0;
+}
+
+.team .team__title {
+    font-size: 40px;
+    font-family: "Raleway-M";
+    font-weight: 500;
+    line-height: 110%;
+    letter-spacing: 0.02em;
+}
+
+.team__main {
+    margin-top: 92px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.team__main .team__text {
+    width: 25%;
+}
+
+.team__text .text__title {
+    font-size: 25px;
+    font-family: "Raleway-M";
+    font-weight: 500;
+    letter-spacing: 0.02em;
+    line-height: 140%;
+}
+
+.team__text .text__info:first-child { margin-top: 28px; }
+
+.team__text .text__info {
+    margin-top: 24px;
+    font-size: 17px;
+    font-family: "Raleway-M";
+    font-weight: 500;
+    letter-spacing: 0.02em;
+    line-height: 140%;
+    color: #000;
+}
+
+.team__text .text__link {
+    margin-top: 28px;
+    color: #6E9C9F;
+    display: inline-block;
+    font-size: 17px;
+    font-family: "Raleway-M";
+    font-weight: 500;
+    letter-spacing: 0.02em;
+    line-height: 140%;
+    border-bottom: 1px solid transparent;
+    transition: border-bottom .5s ease;
+}
+
+.team__text .text__link:hover {
+    border-bottom: 1px solid #CEDEDF;
+}
+
+.team__slider img { width: 100%; }
+
+.team__slider { width: 66.66%; } 
+
+.slick-dots li { margin: 0 10px; }
+
+.slick-dots li button {
+    width: 30px;
+    height: 4px;
+}
+
+.slick-dots { bottom: 20px; }
+.slick-dots li button:before {
+    content: "";
+    background: #fff;
+    width: 30px;
+    height: 4px;
+ }
+
+#teamLeft, 
+#teamRight {
+    position: absolute;
+    top: 50%;
+    font-size: 25px;
+    padding: 4px 8px;
+    border-radius: 16px;
+    cursor: pointer;
+    transition: .5s ease;
+}
+
+#teamLeft:hover, 
+#teamRight:hover { opacity: .5; }
+
+#teamRight { right: -58px; }
+#teamLeft { left: -68px; }
+
+
+@media (max-width: 1538px) {
+    .team__main { flex-direction: column; }
+    .team__main .team__text { width: 100%; margin-top: 50px; }
+}
+
+@media (max-width: 920px) {
+    #sliderTeam {
+        width: 509px;
+        height: 347px;
+    }
+}
+
+@media (max-width: 600px) {
+    #sliderTeam {
+        width: 360px;
+        height: 240px;
+    }
+    .team__slider-arrow { 
+        width: 125%; 
+        transform: translateX(-10%);
+    }
+    .team__slider-arrow {
+        justify-content: center;
+        top: -25%;
+        gap: 20px;
+    }
+    .team__slider-arrow span {
+        border: 1px solid #000;
+        padding: 8px;
+    }
+}
+
+@media (max-width: 450px) {
+    #sliderTeam {
+        width: 270px;
+        height: 180px;
+    }
+    .team__slider-arrow { top: -30%; }
+}

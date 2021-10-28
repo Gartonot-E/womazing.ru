@@ -1,0 +1,96 @@
+.collection {
+    position: relative;
+    padding-top: 160px;
+}
+
+.colelction__body h2 {
+    font-size: 40px;
+    font-family: "Raleway-M";
+    font-weight: 500;
+    line-height: 110%;
+    letter-spacing: 0.02em;
+}
+
+.collection__cards {
+    margin-top: 92px;
+}
+
+.card .card__list {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.card__item {
+    width: calc(100%/4);
+}
+
+.card .card__title {
+    font-family: "Raleway-M";
+    font-weight: 500;
+    font-size: 20px;
+    text-align: center;
+    margin-top: 24px;
+    color: #000;
+}
+
+.card .card__price {
+    margin-top: 7px;
+    text-align: center;
+    color: #998E78;
+    font-size: 15px;
+}
+
+.card__img { 
+    position: relative; 
+}
+
+.card__img img { 
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.card .card__overlay {
+    position: absolute;
+    width: 100%;
+    height: 99.1%;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: background, opacity .5s ease;
+}
+
+.card .card__overlay a span {
+    color: #fff;
+    font-size: 22px;
+}
+
+.card .card__img:hover .card__overlay {
+    background: rgba(110, 156, 159, 0.77);
+    opacity: 1;
+}
+
+.price .price__old { 
+    color: #9C9C9C; 
+    text-decoration: line-through;
+}
+
+.collection__link {
+    width: 100%;
+    text-align: center;
+    margin-top: 65px;
+}
+
+.collection__btn { display: inline-block !important; }
+
+@media (max-width: 1240px) {
+    .card__item { width: calc( 100%/3); margin: 0 20px; }
+}
+
+@media (max-width: 669px) {
+    .card__item { width: 100%; margin: 20px 0; }
+}

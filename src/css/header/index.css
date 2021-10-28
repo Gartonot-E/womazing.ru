@@ -1,0 +1,5 @@
+/* Стили для бургер меню */
+@import url('blocks/burger.css');
+
+/* Стили для шапки */
+@import url('blocks/header.css');

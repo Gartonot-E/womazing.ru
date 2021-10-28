@@ -1,0 +1,61 @@
+.advantages {
+    position: relative;
+    margin-top: 130px;
+}
+
+.advantages__body h2 {
+    font-size: 40px;
+    font-family: "Raleway-M";
+    font-weight: 500;
+    line-height: 110%;
+    letter-spacing: 0.02em;
+}
+
+.advantages__list {
+    margin-top: 92px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.advantages__item {
+    width: calc(100%/3);
+}
+
+.item__body span.fa {
+    font-size: 61px;
+}
+
+.item__body h3.item__title {
+    margin-top: 37px;
+    font-family: "Raleway-M";
+    font-weight: 500;
+    font-size: 25px;
+    color: #000;
+}
+
+.item__body .item__text {
+    font-family: "Raleway-M";
+    font-weight: 500;
+    font-size: 17px;
+    line-height: 140%;
+    letter-spacing: 0.02em;
+    color: #000;
+    margin-top: 24px;
+    width: 87.14%; 
+}
+
+@media (max-width: 1240px) {
+    .advantages__item {
+        width: calc(100%/2);
+        margin-bottom: 50px;
+    }
+}
+
+@media (max-width: 669px) {
+    .advantages__list { margin-top: 62px; }
+    .advantages__item { width: 100%; }
+    .item__body { text-align: center; }
+    .item__body h3.item__title { margin-top: 27px; }
+    .item__body .item__text { width: 100%; margin-top: 14px;}
+}

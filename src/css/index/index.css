@@ -1,0 +1,11 @@
+/* Первый экран */
+@import url('blocks/first-screen.css');
+
+/* Коллекция */
+@import url('blocks/collection.css');
+
+/* Преимущества */
+@import url('blocks/advantages.css');
+
+/* Команда */
+@import url('blocks/team.css');
